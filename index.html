@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ev Trades Asia Fib Strat</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1> Ev Trades Asia Fib Strat </h1>
+    <a href="data.html"> <button class="b2">Show Data</button></a>
+    <div class="crit">
+    <h3>Criteria</h3>
+    <ul>
+        <li> Entry after 1 AM </li>
+        <li> Fib respected either 2 / 2.5 level </li>
+        <li> Exit before next day close </li>
+        
+    </ul>
+    </div>
+
+    <div class="pro">
+    <h3> Process</h3>
+    <ol>
+        <li> Strech "Fibonacci Tool" from <b>Start</b> of <i>Asia Session</i>, 
+            to the most recent <b>low or high</b> (7-11pm CST) </li>
+        <br>
+        <li> After formed annotate the Low Time Frame Stop Hunt/Protected Level + Defined Market Structure Shift </li>
+        <br>
+        <li> Wait till 1 AM CST for entry depening on 2 STDV Rejection / 2.5 Pass 
+            <ol>
+                <li> <strong> 2 STDV Rejection </strong> | Target 0.5 STDV level from Asia Session | <span class="redText"> Stop loss .03% above/below 2.5 STDV level </span></li>
+                <li> <strong>2.5 STDV Hit/Pass through</strong> | Target 4 STDV level from Asia Session | <span class="redText"> Stop loss .03% above/below 0 STDV level </span></li>
+            </ol>
+        </li>
+    </ol>
+    </div>
+
+    <div>
+        <table border="1px">
+        <thead>
+            <tr>
+              <th>Pair</th>
+              <th>Date</th>
+              <th>Day</th>
+              <th>Setup</th>
+              <th>W/L</th>
+              <th>+-%</th>
+              <th>Possible R</th>
+              <th>Notes</th>
+              <th>Picture</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="lostTrade">
+              <td>$AUDUSD</td>
+              <td>9/16</td>
+              <td>Monday</td>
+              <td>2 rejection fib from asia entry at 1 am</td>
+              <td>Loss</td>
+              <td>-1%</td>
+              <td>2.5 R</td>
+              <td>good setup just L</td>
+              <td> <img src="1.png" height="50px" width="50px"></td>
+              <td> <a href="one.html">Enlarge</a></td>
+            </tr>
+            <tr class="wonTrade">
+                <td>$AUDUSD</td>
+                <td>9/17</td>
+                <td>Tuesday</td>
+                <td>2 rejection fib from asia entry at 3 am</td>
+                <td>Win</td>
+                <td>+2.4%</td>
+                <td>2.4 R</td>
+                <td>hit only .5 stdv no 0</td>
+                <td> <img src="2.png" height="50px" width="50px"></td>
+                <td> <a href="two.html">Enlarge</a></td>
+              </tr>
+              <tr class="wonTrade">
+                <td>$AUDUSD</td>
+                <td>9/18</td>
+                <td>Wednesday</td>
+                <td>2 STDV rejection from asia entry after 1 am</td>
+                <td>Win</td>
+                <td>+2.7%</td>
+                <td>2.7 R</td>
+                <td>hit only .5 stdv no 0</td>
+                <td> <img src="3.png" height="50px" width="50px"></td>
+                <td> <a href="three.html">Enlarge</a></td>
+              </tr>
+              <tr class="beTrade">
+                <td>$AUDUSD</td>
+                <td>9/19</td>
+                <td>Thursday</td>
+                <td>2.5 STDV touch 2 level entry </td>
+                <td>Breakeven</td>
+                <td>+0%</td>
+                <td>1</td>
+                <td>setup would have hit if swung, cut eod be</td>
+                <td> <img src="4.png" height="50px" width="50px"></td>
+                <td> <a href="four.html">Enlarge</a></td>
+              </tr>
+              <tr class="wonTrade">
+                <td>$AUDUSD</td>
+                <td>9/20</td>
+                <td>Friday</td>
+                <td>2 rejection from asia entry after 1 am</td>
+                <td>Win</td>
+                <td>+2.1%</td>
+                <td>2.1</td>
+                <td>good setup , stdv from 7-9pm not 4 pm cuz too big range didnt hit</td>
+                <td> <img src="5.png" height="50px" width="50px"></td>
+                <td> <a href="five.html">Enlarge</a></td>
+              </tr>
+        </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
